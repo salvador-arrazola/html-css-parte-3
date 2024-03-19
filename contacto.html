@@ -26,11 +26,47 @@
     <main>
       <form>
         <label for="nombreApellido">Nombre y Apellido:</label>
-        <input type="text" id="nombreApellido">
+        <input type="text" id="nombreApellido" class="input-padron">
+        
         <label for="correoElectronico">Correo Electrónico:</label>
-        <input type="text" id="correoElectronico">
+        <input type="text" id="correoElectronico" class="input-padron">
+        
         <label for="telefono">Teléfono:</label>
-        <input type="text" id="telefono">
+        <input type="text" id="telefono" class="input-padron">
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea cols="70" rows="10" id="mensaje" class="input-padron"></textarea>
+        
+        <div>
+          <p>¿Como le gustaría que lo contactemos?</p>
+
+          <label for="radioCorreoElectronico">
+            <input type="radio" name="contacto" value="correo-electronico" id="radioCorreoElectronico" >
+            Correo Electrónico
+          </label>
+
+          <label for="radioTelefono">
+            <input type="radio" name="contacto" value="telefono" id="radioTelefono" >
+            Teléfono
+          </label>
+
+          <label for="radioWhatsapp">
+            <input type="radio" name="contacto" value="whatsapp" id="radioWhatsapp" >
+            WhatsApp
+          </label>
+        </div>
+
+        <div class="select-horario">
+          <p>¿En que horario le gustaría ser atendido?</p>
+          <select>
+            <option>Mañana</option>
+            <option>Tarde</option>
+            <option>Noche</option>
+          </select>
+        </div>
+
+        <label><input type="checkbox" class="checkbox-novedades">¿Le gustaría recibir novedades de la Barbería Alura?</label>
+        
         <input type="submit" value="Enviar Formulario">
       </form>
     </main>
