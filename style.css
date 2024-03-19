@@ -134,3 +134,20 @@ form label, form legend {
   margin: 20px 0;
 }
 
+.enviar {
+  width: 40%;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #7c5c09;
+  border-style: none;
+  border-radius: 5px;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background: #5f9ea0;
+  transform: scale(1.05);
+}
